@@ -47,10 +47,18 @@
   <h2>🎉 أحسنت</h2>
 <p>لقد أكملت الدرس الأول.</p>
   <a href="niveaux.html"><button>العودة إلى المستويات</button></a>
-  <script>
+<script>
+function reinitialiserResultats() {
+  const resultat = document.getElementById("resultat");
+  const resultatTest = document.getElementById("resultat-test");
+
+  if (resultat) resultat.textContent = "";
+  if (resultatTest) resultatTest.textContent = "";
+}
+
 window.addEventListener("pageshow", function () {
-  document.getElementById("resultat").innerHTML = "";
-  document.getElementById("resultat-test").innerHTML = "";
+  reinitialiserResultats();
+  setTimeout(reinitialiserResultats, 100);
 });
 </script>
 </body>
