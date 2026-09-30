@@ -10,3 +10,49 @@
 <body>
   <h1>الدرس الثاني</h1>
   <h2>رواية ورش عن نافع من طريق الأزرق</h2>
+<p>
+ورش هو عثمان بن سعيد المصري، وهو أحد الرواة الذين نقلوا قراءة الإمام نافع المدني، والطريق الذي نتعلمه في هذا التطبيق هو طريق الأزرق عن ورش.
+</p>
+<h2>من هو الإمام نافع؟</h2>
+
+<p>
+الإمام نافع المدني هو أحد أئمة القراءات المشهورين، وقد تلقى القراءة عن شيوخ من أهل المدينة المنورة، ونقل قراءته عدد من الرواة، ومن أشهرهم ورش وقالون.
+</p><h2>من هو ورش؟</h2>
+
+<p>
+ورش هو عثمان بن سعيد المصري، وهو من أشهر رواة قراءة الإمام نافع. وقد رحل إلى المدينة المنورة وقرأ على الإمام نافع، ثم عاد إلى مصر وأقرأ الناس بهذه القراءة.
+</p>
+  
+<h2>ما هو طريق الأزرق؟</h2>
+
+<p>
+الأزرق هو أبو يعقوب يوسف بن عمرو المدني المصري، وهو من أشهر من نقل رواية ورش. وفي هذا التطبيق سنتعلم رواية ورش عن نافع من طريق الأزرق.
+</p>
+<h2>📌 تذكّر</h2>
+
+<p>
+الإمام نافع هو القارئ، وورش هو الراوي عنه، والأزرق هو أحد من نقل رواية ورش.
+</p>
+<h2>🧩 تدرّب</h2>
+
+<p>اختر الإجابة الصحيحة:</p>
+
+<p><strong>من هو الراوي عن الإمام نافع الذي نتعلم روايته في هذا التطبيق؟</strong></p>
+<div class="reponses">
+  <button onclick="document.getElementById('resultat').innerHTML='✅ إجابة صحيحة'">ورش</button>
+  <button onclick="document.getElementById('resultat').innerHTML='❌ إجابة غير صحيحة، حاول مرة أخرى'">قالون</button>
+  <button onclick="document.getElementById('resultat').innerHTML='❌ إجابة غير صحيحة، حاول مرة أخرى'">الأزرق</button>
+  </div>
+<p id="resultat"></p><script>
+function reinitialiserResultat() {
+  const resultat = document.getElementById("resultat");
+  if (resultat) resultat.textContent = "";
+}
+
+window.addEventListener("pageshow", function () {
+  reinitialiserResultat();
+  setTimeout(reinitialiserResultat, 100);
+});
+</script>
+  </body>
+</html>
